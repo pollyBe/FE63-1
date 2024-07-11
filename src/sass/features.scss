@@ -7,4 +7,28 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
+  gap: 88px 30px;
 }
+
+.features-card {
+  @include card;
+  .fearures-card__img {
+    margin-bottom: 30px;
+    i {
+      @include card-icon;
+    }
+} 
+
+.features-card__title {
+  @include card-title;
+  margin-bottom: 25px;
+}
+  
+.features-card__descr {
+    
+  @include card-descr;
+    p {
+      text-align: center;
+    }
+  }  
+  }

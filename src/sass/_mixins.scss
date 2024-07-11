@@ -32,16 +32,16 @@
   max-width: 370px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
 }
 
 @mixin card-icon {
   color: $_icon-color;
   font-size: $_64px;
-  font-weight: $_regular;
 }
 
 @mixin card-title {
+  text-transform: uppercase;
   font-size: $_24px;
   font-weight: $_black;
 }
