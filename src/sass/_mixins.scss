@@ -7,6 +7,8 @@
   color: $_white;
 }
 
+// links
+
 @mixin button-link {
   display: flex;
   justify-content: center;
@@ -27,6 +29,8 @@
   font-size: $_24px;
   font-weight: $_black;
 }
+
+// cards
 
 @mixin card {
   max-width: 370px;
@@ -50,4 +54,39 @@
   font-size: $_18px;
   font-weight: $_regular;
   color: $_descr;
+}
+
+// masks
+
+@mixin header-mask {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(37, 43, 73, 0.8);
+  z-index: 2;
+}
+
+@mixin gallery-hover {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: $_gallery-hover;
+  z-index: 2;
+}
+
+@mixin gallery-active {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: $_gallery-active;
+  z-index: 2;
 }
