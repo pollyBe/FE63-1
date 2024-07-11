@@ -1,0 +1,17 @@
+.title-btn {
+  @include button-link;
+  
+  &:hover {
+    background-color: $_btn-link-hover
+  }
+
+  &:active {
+    background-color: $_btn-link-active;
+    border: none;
+    box-shadow: $_btn-shadow;
+  }
+}
+
+.title-btn-link {
+  @include btn-link-text;
+}
