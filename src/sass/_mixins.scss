@@ -1,0 +1,53 @@
+@mixin main-title {
+  font-size: $_64px;
+  font-weight: $_black;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  line-height: 75px;
+  color: $_white;
+}
+
+@mixin button-link {
+  display: flex;
+  justify-content: center;
+  width: 370px;
+  height: 80px;
+  background-color: #FF4343;
+  text-align: center;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: 0.6s ease;
+}
+
+@mixin btn-link-text {
+  align-self: center;
+  text-transform: uppercase;
+  font-size: $_24px;
+  color: $_white;
+  font-size: $_24px;
+  font-weight: $_black;
+}
+
+@mixin card {
+  max-width: 370px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@mixin card-icon {
+  color: $_icon-color;
+  font-size: $_64px;
+  font-weight: $_regular;
+}
+
+@mixin card-title {
+  font-size: $_24px;
+  font-weight: $_black;
+}
+
+@mixin card-descr {
+  font-size: $_18px;
+  font-weight: $_regular;
+  color: $_descr;
+}

@@ -1,0 +1,115 @@
+.header {
+  background-image: url(../img/bg/header-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  &::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(37, 43, 73, 0.8);
+    z-index: 2;
+  }
+}
+
+.header-wrap {
+  position: relative;
+  z-index: 99;
+}
+
+.header-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+  border-bottom: $_nav-border;
+}
+
+.header-navigation-logo {
+  span {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: $_black;
+    color: #656980;
+    .logo-white {
+      font-size: 2rem;
+      font-weight: $_regular;
+      color: $_white;
+    }
+  }
+}
+
+.header-navigation-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 670px;
+  .header-navigation-list__item {
+    cursor: pointer;
+    
+    
+    .header-navigation-list__item_link {
+      text-transform: uppercase;
+      color: $_white;
+      font-size: $_13px;
+      font-weight: $_bold;
+      transition: 0.5s ease;
+      border-bottom: 3px solid rgba(186, 187, 197, 0);
+      padding: 0 25px 37px;
+      &:hover {
+        border-bottom: $_nav-border-hover;
+      }
+      &:active {
+        color: $_nav-link-active;
+        border-bottom: $_nav-border-active;
+      }
+    }
+  }
+}
+
+.header-info {
+  padding: 120px 0;
+}
+
+.title {
+  @include main-title;
+  margin-bottom: 31.5px;
+  width: 100%;
+}
+
+.title-descr{
+  max-width: 1000px;
+  margin: auto;
+  margin-bottom: 80px;
+
+  p{
+    color: $_white;
+    font-size: $_24px;
+    font-weight: $_regular;
+    text-align: center;
+  }
+}
+
+.title-btn {
+  @include button-link;
+  
+  &:hover {
+    background-color: $_btn-link-hover
+  }
+
+  &:active {
+    background-color: $_btn-link-active;
+    border: none;
+    box-shadow: $_btn-shadow;
+  }
+}
+
+.title-btn-link {
+  @include btn-link-text;
+}
