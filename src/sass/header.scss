@@ -1,3 +1,65 @@
+.header {
+  background-image: url(../img/bg/header-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  &::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(37, 43, 73, 0.8);
+    z-index: 2;
+  }
+}
+
+.header-wrap {
+  position: relative;
+  z-index: 99;
+}
+
+.header-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+  border-bottom: $_nav-border;
+}
+
+.header-navigation-logo {
+  span {
+    text-transform: uppercase;
+    font-size: $_24px;
+    font-weight: $_black;
+    color: #656980;
+    .logo-white {
+      font-size: $_24px;
+      font-weight: $_regular;
+      color: $_white;
+    }
+  }
+}
+
+.header-navigation-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 50%;
+  .header-navigation-list__item {
+    .header-navigation-list__item_link {
+      text-transform: uppercase;
+      color: $_white;
+      font-size: $_13px;
+      font-weight: $_bold;
+    }
+  }
+}
+
 .title-btn {
   @include button-link;
   
