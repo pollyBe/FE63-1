@@ -3,6 +3,7 @@
 @import '../sass/_mixins.scss';
 @import '../sass/var';
 @import '../sass/header.scss';
+@import '../sass/features.scss';
 
 
 
@@ -19,7 +20,7 @@ html {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1170px;
   padding: 0 15px;
   margin: auto;
 }

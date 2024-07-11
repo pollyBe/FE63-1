@@ -34,11 +34,11 @@
 .header-navigation-logo {
   span {
     text-transform: uppercase;
-    font-size: $_24px;
+    font-size: 2rem;
     font-weight: $_black;
     color: #656980;
     .logo-white {
-      font-size: $_24px;
+      font-size: 2rem;
       font-weight: $_regular;
       color: $_white;
     }
@@ -49,14 +49,50 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 50%;
+  max-width: 670px;
   .header-navigation-list__item {
+    cursor: pointer;
+    
+    
     .header-navigation-list__item_link {
       text-transform: uppercase;
       color: $_white;
       font-size: $_13px;
       font-weight: $_bold;
+      transition: 0.5s ease;
+      border-bottom: 3px solid rgba(186, 187, 197, 0);
+      padding: 0 25px 37px;
+      &:hover {
+        border-bottom: $_nav-border-hover;
+      }
+      &:active {
+        color: $_nav-link-active;
+        border-bottom: $_nav-border-active;
+      }
     }
+  }
+}
+
+.header-info {
+  padding: 120px 0;
+}
+
+.title {
+  @include main-title;
+  margin-bottom: 31.5px;
+  width: 100%;
+}
+
+.title-descr{
+  max-width: 1000px;
+  margin: auto;
+  margin-bottom: 80px;
+
+  p{
+    color: $_white;
+    font-size: $_24px;
+    font-weight: $_regular;
+    text-align: center;
   }
 }
 

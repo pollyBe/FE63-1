@@ -1,0 +1,10 @@
+.features {
+  background-color: $_white;
+  padding: 116px 0;
+}
+
+.fearures-wrap {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
