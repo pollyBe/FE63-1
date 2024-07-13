@@ -3,7 +3,7 @@
   font-weight: $_black;
   font-family: 'Raleway', sans-serif;
   text-align: center;
-  line-height: 75px;
+  line-height: 4.6875rem;
   color: $_white;
 }
 
@@ -33,7 +33,7 @@
 // cards
 
 @mixin card {
-  max-width: 370px;
+  max-width: 23.125rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -90,3 +90,4 @@
   background-color: $_gallery-active;
   z-index: 2;
 }
+
