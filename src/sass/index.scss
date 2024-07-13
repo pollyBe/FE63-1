@@ -1,13 +1,3 @@
-@import '../sass/_fonts.scss';
-@import '../sass/_cdn.scss';
-@import '../sass/_mixins.scss';
-@import '../sass/var';
-@import '../sass/header.scss';
-@import '../sass/features.scss';
-@import '../sass/gallery.scss';
-
-
-
 html {
   font-family: "Raleway", sans-serif;
 }
@@ -25,4 +15,15 @@ html {
   padding: 0 15px;
   margin: auto;
 }
+
+@import '../sass/_fonts.scss';
+@import '../sass/_cdn.scss';
+@import '../sass/_mixins.scss';
+@import '../sass/_var';
+@import '../sass/header.scss';
+@import '../sass/features.scss';
+@import '../sass/gallery.scss';
+@import '../sass/our-team.scss';
+
+
 
