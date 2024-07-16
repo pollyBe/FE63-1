@@ -8,6 +8,7 @@ html {
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -25,6 +26,8 @@ html {
 @import '../sass/gallery.scss';
 @import '../sass/our-team.scss';
 @import '../sass/slider.scss';
+@import '../sass/download.scss';
+@import '../sass/footer.scss';
 
 
 
