@@ -1,5 +1,5 @@
 html {
-  font-family: "Raleway", sans-serif;
+  font-family: "Raleway", "Cardo", sans-serif;
 }
 
 * {
@@ -24,6 +24,7 @@ html {
 @import '../sass/features.scss';
 @import '../sass/gallery.scss';
 @import '../sass/our-team.scss';
+@import '../sass/slider.scss';
 
 
 
