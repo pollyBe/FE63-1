@@ -1,6 +1,9 @@
 .download {
   background-color: $_white;
   padding: 114px 0;
+  @media (max-width: 320px) {
+    padding: 34px 0;
+  }
 }
 
 .download-wrap {
@@ -15,6 +18,13 @@
   font-weight: $_medium;
   line-height: 35px;
   margin-bottom: 10px;
+  @media (max-width: 1024px) {
+    font-size: $_24px;
+  }
+  @media (max-width: 320px) {
+    font-size: $_18px;
+    text-align: center;
+  }
 }
 
 .download__descr {
@@ -22,6 +32,13 @@
   p {
     font-size: $_18px;
     font-weight: $_bold;
+    @media (max-width: 1024px) {
+      font-size: $_14px;
+    }
+    @media (max-width: 320px) {
+      font-size: $_13px;
+      text-align: center;
+    }
   }
 }
 
@@ -31,6 +48,9 @@
   a {
     @include btn-link-text;
     text-align: center;
+    @media (max-width: 1024px) {
+      font-size: $_18px;
+    }
   }
 }
 

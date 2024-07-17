@@ -1,6 +1,9 @@
 .features {
   background-color: $_white;
   padding: 116px 0;
+  @media (max-width: 320px) {
+    padding: 35px 0;
+  }
 }
 
 .fearures-wrap {
@@ -8,6 +11,11 @@
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 88px 30px;
+  @media (max-width: 320px) {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 42px 0;
+  }
 }
 
 .features-card {

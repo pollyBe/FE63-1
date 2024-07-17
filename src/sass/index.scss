@@ -12,9 +12,15 @@ html {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1170px;
   padding: 0 15px;
   margin: auto;
+  @media (max-width: 1024px){
+    max-width: 1000px;
+  }
+  // @media (max-width: 320px) {
+  //   max-width: 280px;
+  // }
 }
 
 @import '../sass/_fonts.scss';
