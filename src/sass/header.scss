@@ -64,7 +64,7 @@
       font-weight: $_bold;
       transition: 0.5s ease;
       border-bottom: 3px solid rgba(186, 187, 197, 0);
-      padding: 0 25px 37px;
+      padding: 0 25px 38px;
       &:hover {
         border-bottom: $_nav-border-hover;
       }
@@ -88,11 +88,6 @@
 
  @media (max-width: 320px) {
   .header-navigation-list.active{
-    background-image: url(../img/bg/header-bg.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
     z-index: 1;
     &::before {
       @include header-mask;
@@ -104,7 +99,7 @@
     position: absolute;
     top: 56px;
     left: -20px;
-    width: 120%;
+    width: 112%;
     height: calc(100vh - 57px);
     .header-navigation-list__item {
       z-index: 5;
