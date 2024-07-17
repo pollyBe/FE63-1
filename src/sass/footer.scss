@@ -56,3 +56,25 @@
   }
 }
 
+.footer-info__about {
+  p {
+    font-size: $_18px;
+    font-weight: $_regular;
+    color: $_white;
+    text-align: center;
+  }
+}
+
+.footer-copytight {
+  max-width: 360px;
+  margin: auto;
+  p {
+    font-size: $_18px;
+    font-weight: $_regular;
+    color: #808080;
+    text-align: center;
+    span {
+      color: $_white;
+    }
+  }
+}

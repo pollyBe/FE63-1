@@ -3,9 +3,8 @@
 }
 
 .slider-wrapper {
-  max-height: 490px;
   overflow: hidden;
-  position: relative;
+  position:relative;
   transition: transform 0.5s ease-in-out;
 }
 
@@ -14,6 +13,7 @@
   flex-wrap: wrap;
   width: 100%;
   height: 490px;
+  margin-bottom: 31px;
   .slider-item__img {
     width: 50%;
     overflow: hidden;
@@ -53,6 +53,34 @@
       text-transform: uppercase;
       color: $_white;
     }
+  }
+}
+
+
+.slick-dots {
+  display: flex;
+  justify-content: space-between;
+  max-width: 170px;
+  margin: 31px auto 0;
+  li {
+      cursor: pointer;
+      width: 14px;
+      height: 14px;
+      border: 1px solid #7E5D6F;
+      background-color: transparent;
+      border-radius: 50%;
+    button {
+      cursor: pointer;
+      opacity: 0;
+    }
+  }
+  .slick-active{
+    cursor: pointer;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #7E5D6F;
+    background-color: #7E5D6F;
+    border-radius: 50%;
   }
 }
 
