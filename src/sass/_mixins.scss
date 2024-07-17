@@ -5,6 +5,16 @@
   text-align: center;
   line-height: 4.6875rem;
   color: $_white;
+  @media (max-width: 1024px){
+    font-size: $_48px;
+    font-family: 'Raleway', sans-serif;
+  }
+  @media (max-width: 320px) {
+    font-size: $_36px;
+    line-height: 42px;
+    font-family: 'Raleway', sans-serif;
+  }
+
 }
 
 // links
@@ -20,6 +30,12 @@
   cursor: pointer;
   border-radius: 5px;
   transition: 0.6s ease;
+  @media (max-width: 1024px){
+    width: 314px;
+  }
+  @media (max-width: 320px) {
+    width: 280px;
+  }
 }
 
 @mixin btn-link-text {
@@ -44,18 +60,27 @@
 @mixin card-icon {
   color: $_icon-color;
   font-size: $_64px;
+  @media (max-width: 1024px) {
+    font-size: $_48px;
+  }
 }
 
 @mixin card-title {
   text-transform: uppercase;
   font-size: $_24px;
   font-weight: $_black;
+  @media (max-width: 1024px) {
+    font-size: $_18px;
+  }
 }
 
 @mixin card-descr {
   font-size: $_18px;
   font-weight: $_regular;
   color: $_descr;
+  @media (max-width: 1024px) {
+    font-size: 1rem;
+  }
 }
 
 // masks

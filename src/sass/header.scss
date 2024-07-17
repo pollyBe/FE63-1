@@ -22,6 +22,12 @@
   align-items: center;
   padding: 30px 0;
   border-bottom: $_nav-border;
+  position: relative;
+  @media (max-width: 320px) {
+    border: none;
+    padding: 15px 0;
+  }
+  
 }
 
 .header-navigation-logo {
@@ -34,6 +40,12 @@
       font-size: 2rem;
       font-weight: $_regular;
       color: $_white;
+      @media (max-width: 320px) {
+        font-size: 1rem;
+      }
+    }
+    @media (max-width: 320px) {
+      font-size: 1rem;
     }
   }
 }
@@ -45,8 +57,6 @@
   max-width: 670px;
   .header-navigation-list__item {
     cursor: pointer;
-    
-    
     .header-navigation-list__item_link {
       text-transform: uppercase;
       color: $_white;
@@ -62,12 +72,71 @@
         color: $_nav-link-active;
         border-bottom: $_nav-border-active;
       }
+      @media (max-width: 1024px) {
+        font-size: $_12px;
+      }
+      @media (max-width: 320px) {
+        font-size: $_13px;
+        color: $_white;
+      }
     }
+  }
+  @media (max-width: 320px) {
+    display: none;
+  }
+}
+
+ @media (max-width: 320px) {
+  .header-navigation-list.active{
+    background-image: url(../img/bg/header-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    &::before {
+      @include header-mask;
+    }
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+    position: absolute;
+    top: 56px;
+    left: -20px;
+    width: 120%;
+    height: calc(100vh - 57px);
+    .header-navigation-list__item {
+      z-index: 5;
+    }
+  }
+}
+
+
+.burger-btn {
+  background-color: transparent;
+  width: 55px;
+  height: 56px;
+  border: none;
+  display: none;
+  i {
+    font-size: $_18px;
+    color: $_white;
+  }
+  @media (max-width: 320px) {
+    display: block;
   }
 }
 
 .header-info {
   padding: 120px 0;
+  
+  @media (max-width: 1024px) {
+  padding: 120px 50px;
+  }
+  @media (max-width: 320px) {
+    padding: 50px 0;
+  }
 }
 
 .title {
@@ -80,12 +149,18 @@
   max-width: 1000px;
   margin: auto;
   margin-bottom: 80px;
+  @media (max-width: 320px) {
+    max-width: 280px;
+  }
 
   p{
     color: $_white;
     font-size: $_24px;
     font-weight: $_regular;
     text-align: center;
+    @media (max-width: 1024px){
+      font-size: $_18px;
+    }
   }
 }
 
@@ -119,4 +194,7 @@
 
 .title-btn-link {
   @include btn-link-text;
+  @media (max-width: 1024px) {
+    font-size: $_24px;
+  }
 }

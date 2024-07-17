@@ -9,3 +9,10 @@ $(document).ready(function(){
     slidesToScroll: 1
   });
 });
+
+const burgerMenu = document.querySelector('.burger-btn');
+const navMenu = document.querySelector('.header-navigation-list'); // ваше меню
+
+burgerMenu.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+});
