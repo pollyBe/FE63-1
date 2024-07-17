@@ -1,4 +1,5 @@
 @mixin main-title {
+  text-transform: uppercase;
   font-size: $_64px;
   font-weight: $_black;
   font-family: 'Raleway', sans-serif;
@@ -59,7 +60,7 @@
 
 @mixin card-icon {
   color: $_icon-color;
-  font-size: $_64px;
+  font-size: 5rem;
   @media (max-width: 1024px) {
     font-size: $_48px;
   }
